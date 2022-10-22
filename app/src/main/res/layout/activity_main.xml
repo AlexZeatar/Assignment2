@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imageView"
+        android:background="#FFFFFF"
+        android:layout_width="243dp"
+        android:layout_height="162dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginRight="133dp"
+        android:layout_marginBottom="37dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dd_logo" />
+
+    <TextView
+        android:id="@+id/dinner"
+        android:layout_width="277dp"
+        android:layout_height="94dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text=""
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/confirmation"
+        android:layout_width="277dp"
+        android:layout_height="94dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+    <EditText
+        android:id="@+id/newDinner"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Add New Dinner To Your List"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="535dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/addDinner"
+        android:backgroundTint="@color/main_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addDinner"
+        android:text="Add Food"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="588dp"
+        android:layout_gravity="center"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <Button
+        android:id="@+id/getDinnerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:backgroundTint= "@color/main_theme"
+        android:onClick="getDinner"
+        android:text="DECIDE!"
+        tools:layout_editor_absoluteX="7dp" />
+</LinearLayout>
